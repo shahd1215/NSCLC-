@@ -20,8 +20,6 @@ Random Forest demonstrated high training and testing accuracy, confirming its ro
 ## Results
 Training Accuracy: The model achieved 95.83%, showing excellent performance in capturing patterns within the training data.
 Testing Accuracy: The model achieved 86.05%, reflecting strong generalization to unseen data.
-![Qualitative Visualization](images/nsclc_image.png)
-![Qualitative Visualization](images/nsclc_image2.png)
 ## Usage
 ### Dataset Preparation
 Basic preprocessing steps were performed, including feature selection, handling missing values, target encoding, normalization, and train-test splitting.
@@ -31,3 +29,5 @@ The model achieved strong performance and was saved to be integrated later into 
 ### API
 This API, built with Flask, predicts lung cancer recurrence and its potential location using clinical and genetic inputs. It integrates a trained Random Forest model (rf_model.pkl) along with a scaler (min_scaler.pkl) and feature encoders. User data is submitted via a web form, preprocessed (encoded, filled, scaled), and passed to the model. The API returns recurrence probability and, if applicable, the likelihood of recurrence location (local, regional, distant). Results are shown dynamically on a result page. It provides accurate, real-time predictions and is scalable for future enhancements.
 `API/py.py`
+![Qualitative Visualization](images/nsclc_image.png)
+![Qualitative Visualization](images/nsclc_image2.png)
