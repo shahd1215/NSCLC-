@@ -20,7 +20,8 @@ Random Forest demonstrated high training and testing accuracy, confirming its ro
 ## Results
 Training Accuracy: The model achieved 95.83%, showing excellent performance in capturing patterns within the training data.
 Testing Accuracy: The model achieved 86.05%, reflecting strong generalization to unseen data.
-
+![Qualitative Visualization](images/nsclc_image.png)
+![Qualitative Visualization](images/nsclc_image2.png)
 ## Usage
 ### Dataset Preparation
 Basic preprocessing steps were performed, including feature selection, handling missing values, target encoding, normalization, and train-test splitting.
