@@ -26,7 +26,7 @@ Testing Accuracy: The model achieved 86.05%, reflecting strong generalization to
 Basic preprocessing steps were performed, including feature selection, handling missing values, target encoding, normalization, and train-test splitting.
 A Random Forest classifier was trained on the processed data to predict recurrence and its location.
 The model achieved strong performance and was saved to be integrated later into the API.
-`NSCLC Project.ipynb`
+`Preprocessing and model/NSCLC Project.ipynb`
 ### API
 This API, built with Flask, predicts lung cancer recurrence and its potential location using clinical and genetic inputs. It integrates a trained Random Forest model (rf_model.pkl) along with a scaler (min_scaler.pkl) and feature encoders. User data is submitted via a web form, preprocessed (encoded, filled, scaled), and passed to the model. The API returns recurrence probability and, if applicable, the likelihood of recurrence location (local, regional, distant). Results are shown dynamically on a result page. It provides accurate, real-time predictions and is scalable for future enhancements.
 `py.py`
